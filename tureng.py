@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup as bs4
 
-word = input('Enter Words: ')
+word = input('Enter Word: ')
 
 translate = requests.get("https://tureng.com/tr/turkce-ingilizce/"+word)
 soup = bs4(translate.content, "html.parser")
